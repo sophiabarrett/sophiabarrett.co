@@ -2,10 +2,10 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <li><span>About</span></li>
+        <li><span>Portfolio</span></li>
+        <li><span>Contact</span></li>
+        <li><span>Resume</span></li>
       </ul>
     </nav>
   );
