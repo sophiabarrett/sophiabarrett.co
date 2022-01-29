@@ -1,6 +1,10 @@
-import { useState } from "react";
+import { useState, createElement } from "react";
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import About from "./components/About"
+import Portfolio from "./components/Portfolio"
+import Contact from "./components/Contact"
+import Resume from "./components/Resume"
 
 function App() {
   const pages = ['About', 'Portfolio', 'Contact', 'Resume']
@@ -15,7 +19,10 @@ function App() {
         setCurrentPage={setCurrentPage}
       />
       <main>
-        <h1>Hello World!</h1>
+        {currentPage === 'About' && <About />}
+        {currentPage === 'Portfolio' && <Portfolio />}
+        {currentPage === 'Contact' && <Contact />}
+        {currentPage === 'Resume' && <Resume />}
       </main>
       <Footer />
     </div>
