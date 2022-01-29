@@ -30,7 +30,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 5%;
+  margin-bottom: 30px;
 }
 
 header h1,
@@ -39,7 +39,7 @@ header nav {
 }
 
 header h1 {
-  margin: 20px 0 30px 0;
+  margin: 30px 0 20px 0;
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: .2em;
@@ -53,15 +53,15 @@ header h1 a {
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
 }
 
 header nav span {
   display: inline-block;
-  padding: 14px 10px 10px 10px;
-  margin: 0 25px;
-  font-size: 18px;
+  padding: 14px 6px 10px 6px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: .1em;
   cursor: pointer;
@@ -91,17 +91,69 @@ footer {
   margin: 30px 0;
 }
 
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 0 26px;
+  margin-bottom: 20px;
+}
+
+footer ul li a {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+footer ul li a:hover {
+  color: var(--accent-color);
+}
+
 footer .legal {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   opacity: .6;
   text-align: center;
+  margin-top: 20px;
 }
 
 
 /* Responsive Styles */
+@media screen and (min-width: 576px) {
+  .page-wrapper {
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: 10px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+
+  header nav span {
+    font-size: 18px;
+  }
+
+  footer ul li a {
+    font-size: 40px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   header h1,
   header nav {
     flex-basis: auto;
+  }
+
+  header nav span {
+    padding: 20px 10px 10px 10px;
+    margin: 0 25px;
+    font-size: 20px;
   }
 }
