@@ -62,8 +62,15 @@ header nav span {
   border-bottom: solid 4px rgba(0,0,0,0);
 }
 
+header nav span.current {
+  border-bottom: solid 4px var(--primary-color);
+}
+
 header nav span:hover {
   color: var(--accent-color);
+}
+
+header nav span.current:hover {
   border-bottom: solid 4px var(--accent-color);
 }
 

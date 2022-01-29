@@ -1,11 +1,18 @@
-function Nav() {
+function Nav({ props }) {
+  const pages = props.pages;
+  const currentPage = props.currentPage;
+  const setCurrentPage = props.setCurrentPage;
+
   return (
     <nav>
       <ul>
-        <li><span>About</span></li>
-        <li><span>Portfolio</span></li>
-        <li><span>Contact</span></li>
-        <li><span>Resume</span></li>
+        {pages.map((pageTitle) => (
+          <li>
+            <span className={currentPage === pageTitle && "current"} onClick={() => setCurrentPage(pageTitle)}>
+              {pageTitle}
+            </span>
+          </li>
+        ))}
       </ul>
     </nav>
   );

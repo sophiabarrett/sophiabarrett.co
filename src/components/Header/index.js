@@ -1,10 +1,10 @@
 import Nav from "../Nav";
 
-function Header() {
+function Header(props) {
   return (
     <header>
       <h1><a href="/">Sophia Barrett</a></h1>
-      <Nav />
+      <Nav props={props}/>
     </header>
   );
 }
