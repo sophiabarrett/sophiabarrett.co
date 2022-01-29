@@ -12,7 +12,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div>
+    <div class="page-wrapper">
       <Header 
         pages={pages}
         currentPage={currentPage}

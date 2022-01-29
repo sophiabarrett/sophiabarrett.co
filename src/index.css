@@ -17,6 +17,12 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+.page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 /* Header Styles */
 header {
   font-family: 'Roboto', sans-serif;
@@ -72,6 +78,23 @@ header nav span:hover {
 
 header nav span.current:hover {
   border-bottom: solid 4px var(--accent-color);
+}
+
+/* Main Content Styles */
+main {
+  flex: 1 0 auto;
+}
+
+/* Footer Styles */
+footer {
+  flex-shrink: 0;
+  margin: 30px 0;
+}
+
+footer .legal {
+  font-family: 'Roboto', sans-serif;
+  opacity: .6;
+  text-align: center;
 }
 
 
