@@ -1,9 +1,11 @@
 function Footer() {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-    return (
-        <p>© {currentYear} Sophia Barrett. All Rights Reserved</p>
-    );
+  return (
+    <footer>
+      <p>© {currentYear} Sophia Barrett. All Rights Reserved</p>
+    </footer>
+  );
 }
 
 export default Footer;

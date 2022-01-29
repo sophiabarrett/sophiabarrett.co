@@ -1,7 +1,12 @@
+import Nav from "../Nav";
+
 function Header() {
-    return (
-        <h1>This is the header.</h1>
-    );
+  return (
+    <header>
+      <h1>Sophia Barrett</h1>
+      <Nav />
+    </header>
+  );
 }
 
 export default Header;
