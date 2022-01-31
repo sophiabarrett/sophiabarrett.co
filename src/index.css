@@ -15,6 +15,8 @@
 body {
   color: var(--primary-color);
   font-family: 'Playfair Display', serif;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .page-wrapper {
@@ -97,11 +99,12 @@ main section .title-wrapper {
   margin-bottom: 30px;
 }
 
-main section h2 {
+main section .title-wrapper h2 {
+  box-sizing: content-box;
   color: var(--white);
   background-color: var(--primary-color);
-  width: 160px;
-  height: 160px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   font-weight: 400;
   font-size: 42px;
@@ -150,7 +153,7 @@ main section .paragraph-start {
   flex-basis: 100%;
 }
 
-#about h2 {
+#about .title-wrapper h2 {
   padding: 45px 100px 55px 0;
   margin-right: 140px;
 }
@@ -160,6 +163,11 @@ main section .paragraph-start {
   height: auto;
   margin-top: -50px;
   margin-left: 60px;
+}
+
+/* Portfolio Content Styles */
+#portfolio .title-wrapper h2 {
+  padding: 90px 108px 40px 22px;
 }
 
 /* Footer Styles */
@@ -269,6 +277,10 @@ footer .legal {
   footer ul li a {
     font-size: 40px;
   }
+
+  footer {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -291,6 +303,10 @@ footer .legal {
     padding: 20px 10px 10px 10px;
     margin: 0 25px;
     font-size: 20px;
+  }
+
+  footer {
+    margin-top: 90px;
   }
 }
 
