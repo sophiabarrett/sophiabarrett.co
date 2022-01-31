@@ -26,6 +26,25 @@ body {
   margin: 0 3%;
 }
 
+.button {
+  display: inline-block; 
+  padding: .6em .9em;
+  margin: 6px;
+  border: solid 3px var(--primary-color);
+  border-radius: .4em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: .05em;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white);
+}
+
 /* Header Styles */
 header {
   font-family: 'Roboto', sans-serif;
@@ -166,8 +185,47 @@ main section .paragraph-start {
 }
 
 /* Portfolio Content Styles */
+#portfolio .title-wrapper {
+  text-align: left;
+}
+
 #portfolio .title-wrapper h2 {
-  padding: 90px 108px 40px 22px;
+  font-size: 34px;
+  margin-left: 15%;
+  padding: 70px 73px 20px 17px;
+}
+
+#portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#portfolio ul li {
+  list-style: none;
+  flex-basis: 100%;
+  margin: 40px 0;
+}
+
+#portfolio ul li img {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio h3 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .04em;
+}
+
+#portfolio p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: .04em;
+  line-height: 1.4em;
+  padding: .5em 0;
 }
 
 /* Footer Styles */
@@ -274,6 +332,17 @@ footer .legal {
     margin-left: 20px;
   }
 
+  #portfolio .title-wrapper h2 {
+    font-size: 42px;
+    margin-left: 10%;
+    padding: 90px 105px 40px 25px;
+  }
+
+  #portfolio ul li:not(:first-child) {
+    flex-basis: 40%;
+    margin: 60px 0;
+  }
+
   footer ul li a {
     font-size: 40px;
   }
@@ -290,6 +359,15 @@ footer .legal {
 
   #intro p {
     font-size: 44px;
+  }
+
+  #portfolio ul li:first-child {
+    margin-top: -80px;
+    text-align: right;
+  }
+
+  #portfolio ul li:first-child img {
+    width: 70%;
   }
 }
 
@@ -329,5 +407,9 @@ footer .legal {
     width: 60%;
     margin-top: -50px;
     margin-left: 70px;
+  }
+
+  #portfolio ul li:first-child img {
+    width: 80%;
   }
 }

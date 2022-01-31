@@ -1,15 +1,14 @@
 import Project from "../Project";
 
 function Portfolio() {
-  const featuredProject = {
-    title: "The Book Exchange",
-    description: "Website Design & Development",
-    live_url: "https://the-book-exchange.herokuapp.com/",
-    repo_url: "https://github.com/sophiabarrett/the-book-exchange/",
-    img_file: "the-book-exchange",
-  };
-
   const projects = [
+    {
+      title: "The Book Exchange",
+      description: "Website Design & Development",
+      live_url: "https://the-book-exchange.herokuapp.com/",
+      repo_url: "https://github.com/sophiabarrett/the-book-exchange/",
+      img_file: "the-book-exchange",
+    },
     {
       title: "Show Finder",
       description: "Website Development",
@@ -64,12 +63,13 @@ function Portfolio() {
     <section id="portfolio">
       <div class="title-wrapper">
         <h2>Portfolio</h2>
-        <Project project={featuredProject} />
       </div>
       <div class="content-wrapper">
-        {projects.map((project) => (
-          <Project project={project} />
-        ))}
+        <ul>
+          {projects.map((project) => (
+            <Project project={project} />
+          ))}
+        </ul>
       </div>
     </section>
   );
