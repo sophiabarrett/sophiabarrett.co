@@ -92,6 +92,11 @@ main section {
   margin-bottom: 20px;
 }
 
+main section .title-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 main section h2 {
   color: var(--white);
   background-color: var(--primary-color);
@@ -100,16 +105,18 @@ main section h2 {
   border-radius: 50%;
   font-weight: 400;
   font-size: 42px;
+  display: inline-block;
 }
 
 main section p {
+  clear: both;
   font-size: 18px;
   line-height: 1.75em;
   padding: 12px 0;
 }
 
 main section .paragraph-start {
-  font-size: 20px;
+  font-size: 1.1em;
   font-weight: 700;
 }
 
@@ -130,21 +137,29 @@ main section .paragraph-start {
   height: auto;
 }
 
+#about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #about .title-wrapper {
-  text-align: center;
-  margin-bottom: 30px;
+  flex-basis: 100%;
+}
+
+#about .content-wrapper {
+  flex-basis: 100%;
 }
 
 #about h2 {
-  margin: 0 45% 0 auto;
   padding: 45px 100px 55px 0;
+  margin-right: 140px;
 }
 
 #about img {
-  width: 250px;
-  height: 250px;
+  width: 60%;
+  height: auto;
   margin-top: -50px;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 /* Footer Styles */
@@ -188,6 +203,10 @@ footer .legal {
   .page-wrapper {
     margin: 0 5%;
   }
+
+  #about img {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 768px) {
   header {
@@ -200,6 +219,25 @@ footer .legal {
 
   header nav span {
     font-size: 18px;
+  }
+
+  #about {
+    flex-wrap: nowrap;
+  }
+
+  #about .title-wrapper {
+    flex-basis: 30%;
+  }
+  
+  #about .content-wrapper {
+    flex-basis: 70%;
+    padding-left: 10px;
+  }
+
+  #about img {
+    width: 70%;
+    margin-top: -40px;
+    margin-left: 20px;
   }
 
   footer ul li a {
@@ -217,5 +255,17 @@ footer .legal {
     padding: 20px 10px 10px 10px;
     margin: 0 25px;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main section p {
+    font-size: 22px;
+  }
+
+  #about img {
+    width: 60%;
+    margin-top: -50px;
+    margin-left: 70px;
   }
 }
