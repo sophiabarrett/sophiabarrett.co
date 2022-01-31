@@ -221,6 +221,32 @@ footer .legal {
     font-size: 18px;
   }
 
+  #intro {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 8% 120px 8%;
+  }
+
+  #intro .img-wrapper {
+    width: 40%;
+    height: auto;
+    text-align: right;
+  }
+
+  #intro .img-wrapper img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #intro p {
+    font-size: 36px;
+    width: 65%;
+    margin-left: -5%;
+    margin-top: 100px;
+    text-align: left;
+  }
+
   #about {
     flex-wrap: nowrap;
   }
@@ -245,6 +271,16 @@ footer .legal {
   }
 }
 
+@media screen and (min-width: 992px) {
+  #intro .img-wrapper img {
+    width: 80%;
+  }
+
+  #intro p {
+    font-size: 44px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   header h1,
   header nav {
@@ -261,6 +297,16 @@ footer .legal {
 @media screen and (min-width: 1400px) {
   main section p {
     font-size: 22px;
+  }
+
+  #intro {
+    margin: 100px 8% 180px 8%;
+  }
+
+  #intro p {
+    font-size: 48px;
+    margin-top: 150px;
+    width: 60%;
   }
 
   #about img {

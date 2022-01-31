@@ -2,10 +2,12 @@ function About() {
   return (
     <div>
       <section id="intro">
-        <img
-          src={require("../../assets/images/sophia-barrett.png")}
-          alt="Sophia Barrett"
-        />
+        <div class="img-wrapper">
+          <img
+            src={require("../../assets/images/sophia-barrett.png")}
+            alt="Sophia Barrett"
+          />
+        </div>
         <p>
           Hi, I'm Sophia.
           <br />I design and build on-brand web applications and user
