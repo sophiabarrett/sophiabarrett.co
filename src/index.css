@@ -26,23 +26,79 @@ body {
   margin: 0 3%;
 }
 
-.button {
+.button,
+button {
   display: inline-block; 
   padding: .6em .9em;
-  margin: 6px;
   border: solid 3px var(--primary-color);
-  border-radius: .4em;
+  background-color: var(--white);
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   letter-spacing: .05em;
   text-decoration: none;
   color: var(--primary-color);
+  cursor: pointer;
+  outline: none;
 }
 
-.button:hover {
+.button:hover,
+button:hover,
+button:focus {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   color: var(--white);
+}
+
+form > div {
+  margin: 10px 0;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+form label {
+  margin: 10px 0 5px 0;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  padding: 6px;
+  resize: none;
+  border: solid 3px var(--primary-color);
+  border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline-width: 3px;
+  outline-color: var(--accent-color);
+  border-width: 3px;
+  border-color: var(--accent-color);
+}
+
+form button {
+  margin-top: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 16px;
+}
+
+.error-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent-color);
+  padding: 0px;
 }
 
 /* Header Styles */
@@ -226,6 +282,12 @@ main section .paragraph-start {
   letter-spacing: .04em;
   line-height: 1.4em;
   padding: .5em 0;
+}
+
+/* Contact Content Styles */
+#contact .title-wrapper h2 {
+  font-size: 38px;
+  padding: 80px 100px 20px 0px;
 }
 
 /* Footer Styles */

@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <>
       <section id="intro">
         <div class="img-wrapper">
           <img
@@ -50,7 +50,7 @@ function About() {
           </p>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 
