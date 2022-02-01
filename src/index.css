@@ -101,6 +101,26 @@ form button {
   padding: 0px;
 }
 
+.list {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 0;
+}
+
+.list h3{
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.list ul {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.list ul li {
+  margin: 5px;
+}
+
 /* Header Styles */
 header {
   font-family: 'Roboto', sans-serif;
@@ -295,15 +315,39 @@ main section .paragraph-start {
   justify-content: center;
 }
 
-#contact .title-wrapper,
 #contact .content-wrapper {
-  flex-basis: 100%;
+  width: 100%;
+  max-width: 500px;
 }
 
 #contact .title-wrapper h2 {
   font-size: 38px;
   padding: 80px 98px 20px 2px;
   margin: 0 50px;
+}
+
+/* Resume Content Styles */
+#resume .title-wrapper h2 {
+  padding: 45px 88px 75px 33px;
+}
+
+#resume .content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#resume .list {
+  width: 90%;
+  margin: 10px 5%;
+}
+
+#resume .download {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Footer Styles */
@@ -349,7 +393,11 @@ footer .legal {
   }
 
   #about img {
-    width: 50%;
+    width: 40%;
+  }
+
+  #resume .list {
+    width: 40%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -419,19 +467,6 @@ footer .legal {
   #portfolio ul li:not(:first-child) {
     flex-basis: 40%;
     margin: 60px 0;
-  }
-
-  #contact {
-    flex-wrap: nowrap;
-  }
-  
-  #contact .title-wrapper {
-    flex-basis: 20%;
-  }
-
-  #contact .content-wrapper {
-    flex-basis: 80%;
-    max-width: 500px;
   }
 
   footer ul li a {

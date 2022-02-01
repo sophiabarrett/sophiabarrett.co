@@ -39,10 +39,10 @@ function About() {
             still exploring that intersection in my work. I’ve worked across
             countless industries helping small business owners, department
             heads, startups and artists create beautiful solutions to their
-            practical needs. From designing easy-to-use user interfaces, to
-            strategizing seamless customer journeys, to building robust websites
-            and applications, each of my projects delivers a compelling on-brand
-            experience layered over powerful back end performance.
+            practical needs. From designing intuitive user interfaces, to
+            strategizing seamless customer experiences, to building robust
+            websites and applications, each of my projects delivers a compelling
+            on-brand experience layered over powerful back end performance.
           </p>
           <p>
             I am currently living in Gilbert, Arizona with my partner, our two

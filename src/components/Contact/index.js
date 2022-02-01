@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div class="title-wrapper">
+      <div className="title-wrapper">
         <h2>Contact</h2>
       </div>
       <div className="content-wrapper">
