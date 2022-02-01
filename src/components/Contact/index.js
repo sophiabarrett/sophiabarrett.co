@@ -24,13 +24,18 @@ function Contact() {
     }
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(formState);
+  }
+
   return (
     <section id="contact">
       <div class="title-wrapper">
         <h2>Contact</h2>
       </div>
       <div className="content-wrapper">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
             <input type="text" name="name" onBlur={validateInput} />
