@@ -285,9 +285,21 @@ main section .paragraph-start {
 }
 
 /* Contact Content Styles */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact .title-wrapper,
+#contact .content-wrapper {
+  flex-basis: 100%;
+}
+
 #contact .title-wrapper h2 {
   font-size: 38px;
-  padding: 80px 100px 20px 0px;
+  padding: 80px 98px 20px 2px;
+  margin: 0 50px;
 }
 
 /* Footer Styles */
@@ -403,6 +415,19 @@ footer .legal {
   #portfolio ul li:not(:first-child) {
     flex-basis: 40%;
     margin: 60px 0;
+  }
+
+  #contact {
+    flex-wrap: nowrap;
+  }
+  
+  #contact .title-wrapper {
+    flex-basis: 20%;
+  }
+
+  #contact .content-wrapper {
+    flex-basis: 80%;
+    max-width: 500px;
   }
 
   footer ul li a {

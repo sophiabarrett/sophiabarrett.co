@@ -29,26 +29,28 @@ function Contact() {
       <div class="title-wrapper">
         <h2>Contact</h2>
       </div>
-      <form>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" onBlur={validateInput} />
-          {formState.nameErr && <p className="error-message">Please enter your name.</p>}
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="text" name="email" onBlur={validateInput} />
-          {formState.emailErr && <p className="error-message">Please provide a valid email address.</p>}
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="6" onBlur={validateInput} />
-          {formState.messageErr && <p className="error-message">Please let me know how I can help you.</p>}
-        </div>
-        <div>
-          <button type="submit">Send</button>
-        </div>
-      </form>
+      <div className="content-wrapper">
+        <form>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input type="text" name="name" onBlur={validateInput} />
+            {formState.nameErr && <p className="error-message">Please enter your name.</p>}
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input type="text" name="email" onBlur={validateInput} />
+            {formState.emailErr && <p className="error-message">Please provide a valid email address.</p>}
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea name="message" rows="6" onBlur={validateInput} />
+            {formState.messageErr && <p className="error-message">Please let me know how I can help you.</p>}
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
       {/* <div>
         <h4>Contact me directly at:</h4>
         <ul>
