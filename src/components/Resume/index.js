@@ -56,7 +56,7 @@ function Resume() {
         </div>
         <div className="download">
           <a
-            href="../../assets/downloads/sophia-barrett-resume.pdf"
+            href={require("../../assets/downloads/sophia-barrett-resume.pdf")}
             className="button"
             download
           >
