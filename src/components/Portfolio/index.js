@@ -38,7 +38,6 @@ function Portfolio() {
     {
       title: "Daniel Armour Art",
       description: "Website Design & Development",
-      live_url: "http://www.danielarmourart.com/",
       img_file: "daniel-armour-art",
     },
     {
