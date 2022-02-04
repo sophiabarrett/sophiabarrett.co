@@ -9,51 +9,27 @@ function Resume() {
           <span className="paragraph-start">
             Self-motivated full stack web developer
           </span>{" "}
-          with background in design, branding, and marketing. Fascinated by the
-          intersection of form and function and passionate about uniting
-          intuitive front end experiences with powerful back end performance.
-          Over a decade of experience in branding, marketing, UI/UX design,
-          graphic design, project management, leadership, and teamwork.
-          Positioned to provide unique perspectives on end-user experience by
-          leveraging expertise in visual communications. Excels working
-          remotely.
+          with background in design, marketing, and visual communication.
+          Fascinated by the intersection of form and function and passionate
+          about uniting intuitive front end experiences with powerful back end
+          performance. Over a decade of experience in UI/UX design, WordPress
+          development, project management, problem solving, leadership, and
+          teamwork. Positioned to provide unique perspectives on end-user
+          experience by leveraging expertise in digital marketing and user
+          experience design. Excels working remotely.
         </p>
-        <div className="list">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Node</li>
-            <li>Express</li>
-            <li>React</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>JavaScript</li>
-            <li>JQuery</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>WordPress</li>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-            <li>InDesign</li>
-          </ul>
-        </div>
-        <div className="list">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Project Management</li>
-            <li>UI/UX Design</li>
-            <li>Analytical Thinking</li>
-            <li>Strategic Thinking</li>
-            <li>Verbal Communication</li>
-            <li>Written Communication</li>
-            <li>Leadership</li>
-            <li>Teamwork</li>
-            <li>Interpersonal Skills</li>
-            <li>Emotional Intelligence</li>
-            <li>Time Management</li>
-            <li>Self-Management</li>
-          </ul>
-        </div>
+        <p>
+          <span class="paragraph-start">Technical Skills:</span> MERN Stack,
+          JavaScript, HTML, CSS, Git, GraphQL, Mongoose, Sequelize, MySQL,
+          WordPress, Handlebars, Bootstrap, Illustrator, Photoshop, InDesign
+        </p>
+        <p>
+          <span class="paragraph-start">Soft Skills:</span> UI/UX Design,
+          Marketing, Branding, Problem Solving, Critical Thinking, Project
+          Management, Written and Verbal Communication, Leadership, Teamwork,
+          Interpersonal Skills, Emotional Intelligence, Time Management,
+          Self-Management
+        </p>
         <div className="download">
           <a
             href={require("../../assets/downloads/sophia-barrett-resume.pdf")}

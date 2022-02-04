@@ -10,7 +10,7 @@ function About() {
         </div>
         <p>
           Hi, I'm Sophia.
-          <br />I design and build on-brand web applications and user
+          <br />I design and build powerful and compelling web applications and user
           experiences.
         </p>
       </section>
