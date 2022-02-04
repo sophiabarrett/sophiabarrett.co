@@ -11,7 +11,7 @@ A single-page React app to share my work, resume, contact informaion, and a litt
 
 ## Live App
 
-Visit the live app at []()
+Visit the live app at [sophiabarrett.github.io/portfolio](https://sophiabarrett.github.io/portfolio)
 
 ## Screenshot
 
