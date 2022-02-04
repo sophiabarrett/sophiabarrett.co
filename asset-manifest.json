@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a49725ee.css",
-    "main.js": "/portfolio/static/js/main.c637a10e.js",
-    "static/js/787.b597a222.chunk.js": "/portfolio/static/js/787.b597a222.chunk.js",
+    "main.js": "/portfolio/static/js/main.a4bde9ab.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.15f0cb84fd00451775d5.png",
     "static/media/the-book-exchange.png": "/portfolio/static/media/the-book-exchange.58face00bc667d4c2931.png",
     "static/media/daniel-armour-art.png": "/portfolio/static/media/daniel-armour-art.b60c278929ac56fedfad.png",
@@ -20,11 +20,11 @@
     "static/media/sophia-barrett-resume.pdf": "/portfolio/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
     "index.html": "/portfolio/index.html",
     "main.a49725ee.css.map": "/portfolio/static/css/main.a49725ee.css.map",
-    "main.c637a10e.js.map": "/portfolio/static/js/main.c637a10e.js.map",
-    "787.b597a222.chunk.js.map": "/portfolio/static/js/787.b597a222.chunk.js.map"
+    "main.a4bde9ab.js.map": "/portfolio/static/js/main.a4bde9ab.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a49725ee.css",
-    "static/js/main.c637a10e.js"
+    "static/js/main.a4bde9ab.js"
   ]
 }
