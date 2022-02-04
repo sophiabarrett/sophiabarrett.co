@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio-2.0/static/css/main.a49725ee.css",
+    "main.js": "/portfolio-2.0/static/js/main.6aa8f853.js",
+    "static/js/787.b597a222.chunk.js": "/portfolio-2.0/static/js/787.b597a222.chunk.js",
+    "static/media/run-buddy.png": "/portfolio-2.0/static/media/run-buddy.15f0cb84fd00451775d5.png",
+    "static/media/the-book-exchange.png": "/portfolio-2.0/static/media/the-book-exchange.58face00bc667d4c2931.png",
+    "static/media/daniel-armour-art.png": "/portfolio-2.0/static/media/daniel-armour-art.b60c278929ac56fedfad.png",
+    "static/media/uc-hastings-cbl.png": "/portfolio-2.0/static/media/uc-hastings-cbl.8fb8709dca85d70146c4.png",
+    "static/media/river-city.png": "/portfolio-2.0/static/media/river-city.96dfdd5af72d25e86b64.png",
+    "static/media/about-me.png": "/portfolio-2.0/static/media/about-me.b7084519b3788d02c430.png",
+    "static/media/uc-davis-sda.png": "/portfolio-2.0/static/media/uc-davis-sda.2279e6f5a19b478f175c.png",
+    "static/media/mas-1-audio.png": "/portfolio-2.0/static/media/mas-1-audio.1f580d3d5040105af0a2.png",
+    "static/media/spa-on-the-plaza.png": "/portfolio-2.0/static/media/spa-on-the-plaza.d6e4225b142713280315.png",
+    "static/media/technically-a-blog.png": "/portfolio-2.0/static/media/technically-a-blog.dd9e028bab2e586c399a.png",
+    "static/media/show-finder.png": "/portfolio-2.0/static/media/show-finder.38fe0c06d8fc6d5fc2d1.png",
+    "static/media/sophia-barrett.png": "/portfolio-2.0/static/media/sophia-barrett.684a8730a9eacc23d691.png",
+    "static/media/weather-dashboard.png": "/portfolio-2.0/static/media/weather-dashboard.df6609dbd1fbc9b6a055.png",
+    "static/media/code-quiz.png": "/portfolio-2.0/static/media/code-quiz.e6683ecef0f200a47788.png",
+    "static/media/sophia-barrett-resume.pdf": "/portfolio-2.0/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
+    "index.html": "/portfolio-2.0/index.html",
+    "main.a49725ee.css.map": "/portfolio-2.0/static/css/main.a49725ee.css.map",
+    "main.6aa8f853.js.map": "/portfolio-2.0/static/js/main.6aa8f853.js.map",
+    "787.b597a222.chunk.js.map": "/portfolio-2.0/static/js/787.b597a222.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a49725ee.css",
+    "static/js/main.6aa8f853.js"
+  ]
+}
