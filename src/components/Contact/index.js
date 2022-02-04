@@ -61,12 +61,12 @@ function Contact() {
         <ul>
           <li>
             <a href="mailto:sophia@yoursummit.media" target="_blank">
-              <i class="fas fa-paper-plane"></i> sophia@yoursummit.media
+              <i className="fas fa-paper-plane"></i> sophia@yoursummit.media
             </a>
           </li>
           <li>
             <a href="https://github.com/sophiabarrett" target="_blank">
-              <i class="fab fa-github"></i> github.com/sophiabarrett
+              <i className="fab fa-github"></i> github.com/sophiabarrett
             </a>
           </li>
           <li>
@@ -74,7 +74,7 @@ function Contact() {
               href="https://www.linkedin.com/in/sophiabarrett/"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i> linkedin.com/in/sophiabarrett
+              <i className="fab fa-linkedin"></i> linkedin.com/in/sophiabarrett
             </a>
           </li>
         </ul>

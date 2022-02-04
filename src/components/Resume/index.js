@@ -19,12 +19,12 @@ function Resume() {
           experience design. Excels working remotely.
         </p>
         <p>
-          <span class="paragraph-start">Technical Skills:</span> MERN Stack,
+          <span className="paragraph-start">Technical Skills:</span> MERN Stack,
           JavaScript, HTML, CSS, Git, GraphQL, Mongoose, Sequelize, MySQL,
           WordPress, Handlebars, Bootstrap, Illustrator, Photoshop, InDesign
         </p>
         <p>
-          <span class="paragraph-start">Soft Skills:</span> UI/UX Design,
+          <span className="paragraph-start">Soft Skills:</span> UI/UX Design,
           Marketing, Branding, Problem Solving, Critical Thinking, Project
           Management, Written and Verbal Communication, Leadership, Teamwork,
           Interpersonal Skills, Emotional Intelligence, Time Management,

@@ -81,13 +81,13 @@ function Portfolio() {
 
   return (
     <section id="portfolio">
-      <div class="title-wrapper">
+      <div className="title-wrapper">
         <h2>Portfolio</h2>
       </div>
-      <div class="content-wrapper">
+      <div className="content-wrapper">
         <ul>
           {projects.map((project) => (
-            <Project project={project} />
+            <Project project={project} key={project.img_file} />
           ))}
         </ul>
       </div>

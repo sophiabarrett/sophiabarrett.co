@@ -7,8 +7,8 @@ function Nav({ props }) {
     <nav>
       <ul>
         {pages.map((pageTitle) => (
-          <li>
-            <span className={currentPage === pageTitle && "current"} onClick={() => setCurrentPage(pageTitle)}>
+          <li key={pageTitle}>
+            <span className={currentPage === pageTitle ? "current" : "undefined"} onClick={() => setCurrentPage(pageTitle)}>
               {pageTitle}
             </span>
           </li>
