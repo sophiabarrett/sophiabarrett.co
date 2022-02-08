@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a49725ee.css",
-    "main.js": "/portfolio/static/js/main.a4bde9ab.js",
+    "main.js": "/portfolio/static/js/main.55d5d5e3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.15f0cb84fd00451775d5.png",
+    "static/media/tuesdays-findings.png": "/portfolio/static/media/tuesdays-findings.6885254c3a1ca1998896.png",
+    "static/media/santa-cruz-agents.png": "/portfolio/static/media/santa-cruz-agents.62a888a9df4b8b72ba6e.png",
     "static/media/the-book-exchange.png": "/portfolio/static/media/the-book-exchange.58face00bc667d4c2931.png",
     "static/media/daniel-armour-art.png": "/portfolio/static/media/daniel-armour-art.b60c278929ac56fedfad.png",
     "static/media/uc-hastings-cbl.png": "/portfolio/static/media/uc-hastings-cbl.8fb8709dca85d70146c4.png",
@@ -20,11 +22,11 @@
     "static/media/sophia-barrett-resume.pdf": "/portfolio/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
     "index.html": "/portfolio/index.html",
     "main.a49725ee.css.map": "/portfolio/static/css/main.a49725ee.css.map",
-    "main.a4bde9ab.js.map": "/portfolio/static/js/main.a4bde9ab.js.map",
+    "main.55d5d5e3.js.map": "/portfolio/static/js/main.55d5d5e3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a49725ee.css",
-    "static/js/main.a4bde9ab.js"
+    "static/js/main.55d5d5e3.js"
   ]
 }
