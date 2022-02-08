@@ -15,11 +15,6 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://open.spotify.com/user/w3btcecwxn72myqh6atsgnuvo" target="_blank">
-            <i className="fab fa-spotify"></i>
-          </a>
-        </li>
-        <li>
           <a href="mailto:sophia@yoursummit.media" target="_blank">
             <i className="fas fa-paper-plane"></i>
           </a>
