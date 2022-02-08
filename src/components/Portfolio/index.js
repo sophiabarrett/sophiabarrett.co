@@ -57,9 +57,9 @@ function Portfolio() {
       img_file: "run-buddy",
     },
     {
-      title: "Daniel Armour Art",
+      title: "Santa Cruz Agents",
       description: "Website Design & Custom WordPress Development",
-      img_file: "daniel-armour-art",
+      img_file: "santa-cruz-agents",
     },
     {
       title: "Spa on the Plaza",
@@ -72,10 +72,20 @@ function Portfolio() {
       img_file: "mas-1-audio",
     },
     {
+      title: "Daniel Armour Art",
+      description: "Website Design & Custom WordPress Development",
+      img_file: "daniel-armour-art",
+    },
+    {
       title: "Sustainable Design Academy, UC Davis",
       description: "Logo Design & Wordpress Development",
       live_url: "https://research.engineering.ucdavis.edu/sda/",
       img_file: "uc-davis-sda",
+    },
+    {
+      title: "Tuesday's Findings",
+      description: "Logo, Brand & Website Design",
+      img_file: "tuesdays-findings",
     },
   ];
 
