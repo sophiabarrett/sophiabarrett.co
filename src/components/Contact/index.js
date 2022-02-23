@@ -2,31 +2,82 @@ import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
-  const [formState, setFormState] = useState({
+  const [inputValues, setInputValues] = useState({
     name: "",
-    nameErr: false,
     email: "",
-    emailErr: false,
     message: "",
-    messageErr: false,
-  })
+  });
+  const [inputErrors, setInputErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [submitError, setSubmitError] = useState("");
 
-  function validateInput(e) {
-    if (e.target.name === "name") {
-      e.target.value.length ? setFormState({...formState, nameErr: false}) : setFormState({...formState, nameErr: true});
-    }
-    if (e.target.name === "email") {
-      const validEmail = validateEmail(e.target.value);
-      validEmail ? setFormState({...formState, emailErr: false}) : setFormState({...formState, emailErr: true});
-    }
-    if (e.target.name === "message") {
-      e.target.value.length ? setFormState({...formState, messageErr: false}) : setFormState({...formState, messageErr: true});
-    }
-  }
+  const handleInputChange = (e) => {
+    setInputValues({ ...inputValues, [e.target.name]: e.target.value });
+  };
 
-  function handleSubmit(e) {
+  // validate input and return appropriate validation message
+  const validateInput = (inputName, inputValue) => {
+    if (inputName === "email") {
+      const validEmail = validateEmail(inputValue);
+      if (!validEmail) {
+        return "Please provide a valid email address.";
+      }
+    }
+    if (!inputValue.length) {
+      if (inputName === "name") {
+        return "Please tell me your name.";
+      }
+      if (inputName === "message") {
+        return "Please let me know how I can help you.";
+      }
+    }
+  };
+
+  // get validation message for individual input and display to user
+  const updateInputError = (e) => {
+    const validationMessage = validateInput(e.target.name, e.target.value);
+    setInputErrors({ ...inputErrors, [e.target.name]: validationMessage });
+  };
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+
+    // create object to hold error messages for all inputs
+    const updatedInputErrors = {};
+    // create variable to indicate if there are input errors
+    let inputErrorsExists;
+
+    // loop through each input to validate and retrieve error message
+    for (let input in inputValues) {
+      const errMsg = validateInput(input, inputValues[input]);
+      if (errMsg) {
+        updatedInputErrors[input] = errMsg;
+        inputErrorsExists = true;
+      } else {
+        updatedInputErrors[input] = "";
+      }
+    }
+
+    // after retrieving all validation messages, update inputErrors state
+    setInputErrors({ ...inputErrors, ...updatedInputErrors });
+
+    // only submit if there are no input errors
+    if (!inputErrorsExists) {
+      console.log(inputValues);
+
+      // clear form
+      setInputValues({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+
+    // remove focus from submit button
+    document.querySelector("#submit").blur();
   }
 
   return (
@@ -38,21 +89,47 @@ function Contact() {
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input type="text" name="name" onBlur={validateInput} />
-            {formState.nameErr && <p className="error-message">Please enter your name.</p>}
+            <input
+              className={inputErrors.name && "error"}
+              type="text"
+              name="name"
+              onChange={handleInputChange}
+              onBlur={updateInputError}
+            />
+            <p className="error-message">
+              {inputErrors.name ? inputErrors.name : <br />}
+            </p>
           </div>
           <div>
             <label htmlFor="email">Email:</label>
-            <input type="text" name="email" onBlur={validateInput} />
-            {formState.emailErr && <p className="error-message">Please provide a valid email address.</p>}
+            <input
+              className={inputErrors.email && "error"}
+              type="text"
+              name="email"
+              onChange={handleInputChange}
+              onBlur={updateInputError}
+            />
+            <p className="error-message">
+              {inputErrors.email ? inputErrors.email : <br />}
+            </p>
           </div>
           <div>
             <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="6" onBlur={validateInput} />
-            {formState.messageErr && <p className="error-message">Please let me know how I can help you.</p>}
+            <textarea
+              className={inputErrors.message && "error"}
+              name="message"
+              rows="6"
+              onChange={handleInputChange}
+              onBlur={updateInputError}
+            />
+            <p className="error-message">
+              {inputErrors.message ? inputErrors.message : <br />}
+            </p>
           </div>
           <div>
-            <button type="submit">Send</button>
+            <button id="submit" type="submit">
+              Send
+            </button>
           </div>
         </form>
       </div>

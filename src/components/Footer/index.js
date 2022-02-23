@@ -20,7 +20,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <p className="legal">© {currentYear} Sophia Barrett. All Rights Reserved</p>
+      <p className="legal">© {currentYear} Sophia Barrett. All Rights Reserved.</p>
     </footer>
   );
 }
