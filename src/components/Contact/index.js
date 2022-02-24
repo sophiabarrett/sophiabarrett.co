@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [inputValues, setInputValues] = useState({
@@ -12,7 +13,7 @@ function Contact() {
     email: "",
     message: "",
   });
-  const [submitError, setSubmitError] = useState("");
+  const [submitStatus, setSubmitStatus] = useState("");
 
   const handleInputChange = (e) => {
     setInputValues({ ...inputValues, [e.target.name]: e.target.value });
@@ -66,18 +67,37 @@ function Contact() {
 
     // only submit if there are no input errors
     if (!inputErrorsExists) {
-      console.log(inputValues);
+      // set submit message to pending
+      setSubmitStatus("pending");
 
-      // clear form
-      setInputValues({
-        name: "",
-        email: "",
-        message: "",
-      });
+      emailjs
+        .sendForm(
+          "sophia@yoursummit.media",
+          "portfolio_contact_form",
+          e.target,
+          "user_WZsDCzpVv3pWVCWOteguY"
+        )
+        .then(
+          (result) => {
+            // update status displayed to user
+            setSubmitStatus("Thank you! You'll hear from me soon.");
+            // clear form
+            setInputValues({
+              name: "",
+              email: "",
+              message: "",
+            });
+            // remove focus from submit button
+            document.querySelector("#submit").blur();
+          },
+          (error) => {
+            setSubmitStatus(
+              "Sorry, something went wrong. Try again or email me directly at sophia@yoursummit.media."
+            );
+            console.error(error.text);
+          }
+        );
     }
-
-    // remove focus from submit button
-    document.querySelector("#submit").blur();
   }
 
   return (
@@ -93,6 +113,7 @@ function Contact() {
               className={inputErrors.name && "error"}
               type="text"
               name="name"
+              value={inputValues.name}
               onChange={handleInputChange}
               onBlur={updateInputError}
             />
@@ -106,6 +127,7 @@ function Contact() {
               className={inputErrors.email && "error"}
               type="text"
               name="email"
+              value={inputValues.email}
               onChange={handleInputChange}
               onBlur={updateInputError}
             />
@@ -119,6 +141,7 @@ function Contact() {
               className={inputErrors.message && "error"}
               name="message"
               rows="6"
+              value={inputValues.message}
               onChange={handleInputChange}
               onBlur={updateInputError}
             />
@@ -130,7 +153,15 @@ function Contact() {
             <button id="submit" type="submit">
               Send
             </button>
+            {submitStatus === "pending" && (
+              <i className="fa-solid fa-spinner"></i>
+            )}
           </div>
+          {submitStatus.length > 0 && submitStatus !== "pending" && (
+            <div>
+              <p className="success-message">{submitStatus}</p>
+            </div>
+          )}
         </form>
       </div>
       {/* <div>
