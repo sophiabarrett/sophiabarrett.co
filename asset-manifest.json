@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.42a4ccbc.css",
-    "main.js": "/portfolio/static/js/main.50946b3d.js",
+    "main.css": "/portfolio/static/css/main.a2b63b5f.css",
+    "main.js": "/portfolio/static/js/main.05ac7cca.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.15f0cb84fd00451775d5.png",
     "static/media/tuesdays-findings.png": "/portfolio/static/media/tuesdays-findings.6885254c3a1ca1998896.png",
@@ -19,14 +19,15 @@
     "static/media/sophia-barrett.png": "/portfolio/static/media/sophia-barrett.684a8730a9eacc23d691.png",
     "static/media/weather-dashboard.png": "/portfolio/static/media/weather-dashboard.df6609dbd1fbc9b6a055.png",
     "static/media/code-quiz.png": "/portfolio/static/media/code-quiz.e6683ecef0f200a47788.png",
+    "static/media/to-clarify.png": "/portfolio/static/media/to-clarify.ad5be49f3ad2cda24edd.png",
     "static/media/sophia-barrett-resume.pdf": "/portfolio/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
     "index.html": "/portfolio/index.html",
-    "main.42a4ccbc.css.map": "/portfolio/static/css/main.42a4ccbc.css.map",
-    "main.50946b3d.js.map": "/portfolio/static/js/main.50946b3d.js.map",
+    "main.a2b63b5f.css.map": "/portfolio/static/css/main.a2b63b5f.css.map",
+    "main.05ac7cca.js.map": "/portfolio/static/js/main.05ac7cca.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42a4ccbc.css",
-    "static/js/main.50946b3d.js"
+    "static/css/main.a2b63b5f.css",
+    "static/js/main.05ac7cca.js"
   ]
 }
