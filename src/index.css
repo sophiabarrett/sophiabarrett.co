@@ -50,10 +50,6 @@ button:focus {
   color: var(--white);
 }
 
-form > div {
-  margin: 10px 0;
-}
-
 form label,
 form input,
 form textarea {
@@ -65,7 +61,7 @@ form textarea {
 }
 
 form label {
-  margin: 10px 0 5px 0;
+  margin: 0 0 3px 0;
   font-weight: 500;
 }
 
@@ -86,19 +82,51 @@ form textarea:focus {
 }
 
 form button {
-  margin-top: 12px;
+  margin-top: 3px;
   background-color: var(--primary-color);
   color: var(--white);
   font-size: 16px;
 }
 
-.error-message {
+form input.error,
+form textarea.error {
+  background-color: rgba(237,76,55,.2);
+}
+
+form .success-message {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.1em;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+form .error-message {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  line-height: 1.1em;
   font-style: italic;
   font-weight: 500;
   color: var(--accent-color);
   padding: 0px;
+  margin: 3px 0 6px 0;
+}
+
+.fa-spinner {
+  margin-left: 10px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .list {

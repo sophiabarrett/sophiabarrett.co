@@ -10,7 +10,7 @@ function About() {
         </div>
         <p>
           Hi, I'm Sophia.
-          <br />I design and build powerful and compelling web applications and user
+          <br />I design and build compelling web applications and user
           experiences.
         </p>
       </section>
@@ -24,7 +24,9 @@ function About() {
         </div>
         <div className="content-wrapper">
           <p>
-            <span className="paragraph-start">I have always been an artist</span>{" "}
+            <span className="paragraph-start">
+              I have always been an artist
+            </span>{" "}
             with a seemingly inharmonious love for order and logic. Growing up
             and discovering myself inside of that dichotomy was (and is)
             confusing. In school, math was interesting, accessible and
