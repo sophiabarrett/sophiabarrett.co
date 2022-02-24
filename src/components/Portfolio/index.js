@@ -3,6 +3,13 @@ import Project from "../Project";
 function Portfolio() {
   const projects = [
     {
+      title: "To Clarify",
+      description: "React App Design & Development",
+      live_url: "https://toclarify.herokuapp.com/",
+      repo_url: "https://github.com/Teeemster/ToClarify",
+      img_file: "to-clarify",
+    },
+    {
       title: "The Book Exchange",
       description: "Web App Design & Development",
       live_url: "https://the-book-exchange.herokuapp.com/",
