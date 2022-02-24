@@ -9,14 +9,13 @@ function Resume() {
           <span className="paragraph-start">
             Self-motivated full stack web developer
           </span>{" "}
-          with background in design, marketing, and visual communication.
+          with background in design, marketing, and visual communication. Over a
+          decade of experience in UI/UX design and WordPress development.
           Fascinated by the intersection of form and function and passionate
           about uniting intuitive front end experiences with powerful back end
-          performance. Over a decade of experience in UI/UX design, WordPress
-          development, project management, problem solving, leadership, and
-          teamwork. Positioned to provide unique perspectives on end-user
+          performance. Positioned to provide unique perspectives on end-user
           experience by leveraging expertise in digital marketing and user
-          experience design. Excels working remotely.
+          experience design.
         </p>
         <p>
           <span className="paragraph-start">Technical Skills:</span> MERN Stack,
