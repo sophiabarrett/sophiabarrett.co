@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a2b63b5f.css",
-    "main.js": "/portfolio/static/js/main.05ac7cca.js",
+    "main.js": "/portfolio/static/js/main.42d934f9.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.15f0cb84fd00451775d5.png",
     "static/media/tuesdays-findings.png": "/portfolio/static/media/tuesdays-findings.6885254c3a1ca1998896.png",
@@ -23,11 +23,11 @@
     "static/media/sophia-barrett-resume.pdf": "/portfolio/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
     "index.html": "/portfolio/index.html",
     "main.a2b63b5f.css.map": "/portfolio/static/css/main.a2b63b5f.css.map",
-    "main.05ac7cca.js.map": "/portfolio/static/js/main.05ac7cca.js.map",
+    "main.42d934f9.js.map": "/portfolio/static/js/main.42d934f9.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2b63b5f.css",
-    "static/js/main.05ac7cca.js"
+    "static/js/main.42d934f9.js"
   ]
 }
