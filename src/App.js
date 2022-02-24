@@ -1,31 +1,35 @@
 import { useState } from "react";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import About from "./components/About"
-import Portfolio from "./components/Portfolio"
-import Contact from "./components/Contact"
-import Resume from "./components/Resume"
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+} from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
-  const pages = ['About', 'Portfolio', 'Contact', 'Resume']
-
-  const [currentPage, setCurrentPage] = useState(pages[0]);
-
   return (
-    <div className="page-wrapper">
-      <Header 
-        pages={pages}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-      <main>
-        {currentPage === 'About' && <About />}
-        {currentPage === 'Portfolio' && <Portfolio />}
-        {currentPage === 'Contact' && <Contact />}
-        {currentPage === 'Resume' && <Resume />}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="page-wrapper">
+        <Header />
+        <main>
+          <Routes>
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/resume" element={<Resume />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Nav from "../Nav";
 
-function Header(props) {
+function Header() {
+  const navigate = useNavigate();
+
   return (
     <header>
-      <h1><a href="/">Sophia Barrett</a></h1>
-      <Nav props={props}/>
+      <h1><span onClick={() => navigate("/")}>Sophia Barrett</span></h1>
+      <Nav />
     </header>
   );
 }

@@ -1,14 +1,16 @@
-function Nav({ props }) {
-  const pages = props.pages;
-  const currentPage = props.currentPage;
-  const setCurrentPage = props.setCurrentPage;
+import { useNavigate } from "react-router-dom";
+
+function Nav() {
+  const pages = ["About", "Portfolio", "Contact", "Resume"];
+
+  const navigate = useNavigate();
 
   return (
     <nav>
       <ul>
         {pages.map((pageTitle) => (
           <li key={pageTitle}>
-            <span className={currentPage === pageTitle ? "current" : "undefined"} onClick={() => setCurrentPage(pageTitle)}>
+            <span onClick={() => navigate(`/${pageTitle.toLowerCase()}`)}>
               {pageTitle}
             </span>
           </li>

@@ -185,6 +185,10 @@ header nav ul {
   justify-content: space-around;
 }
 
+header h1 span {
+  cursor: pointer;
+}
+
 header nav span {
   display: inline-block;
   padding: 14px 6px 10px 6px;
