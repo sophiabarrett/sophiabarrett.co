@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a49725ee.css",
-    "main.js": "/portfolio/static/js/main.55d5d5e3.js",
+    "main.css": "/portfolio/static/css/main.42a4ccbc.css",
+    "main.js": "/portfolio/static/js/main.50946b3d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.15f0cb84fd00451775d5.png",
     "static/media/tuesdays-findings.png": "/portfolio/static/media/tuesdays-findings.6885254c3a1ca1998896.png",
@@ -21,12 +21,12 @@
     "static/media/code-quiz.png": "/portfolio/static/media/code-quiz.e6683ecef0f200a47788.png",
     "static/media/sophia-barrett-resume.pdf": "/portfolio/static/media/sophia-barrett-resume.d6c9dc6dbd79f33a1565.pdf",
     "index.html": "/portfolio/index.html",
-    "main.a49725ee.css.map": "/portfolio/static/css/main.a49725ee.css.map",
-    "main.55d5d5e3.js.map": "/portfolio/static/js/main.55d5d5e3.js.map",
+    "main.42a4ccbc.css.map": "/portfolio/static/css/main.42a4ccbc.css.map",
+    "main.50946b3d.js.map": "/portfolio/static/js/main.50946b3d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a49725ee.css",
-    "static/js/main.55d5d5e3.js"
+    "static/css/main.42a4ccbc.css",
+    "static/js/main.50946b3d.js"
   ]
 }
