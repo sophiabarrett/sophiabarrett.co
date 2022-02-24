@@ -10,7 +10,7 @@ function Nav() {
       <ul>
         {pages.map((pageTitle) => (
           <li key={pageTitle}>
-            <span onClick={() => navigate(`/${pageTitle.toLowerCase()}`)}>
+            <span onClick={() => navigate(`/portfolio/${pageTitle.toLowerCase()}`)}>
               {pageTitle}
             </span>
           </li>

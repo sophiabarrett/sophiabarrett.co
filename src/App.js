@@ -20,11 +20,11 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
-            <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/resume" element={<Resume />} />
-            <Route path="*" element={<Home />} />
+            <Route exact path="/portfolio/about" element={<About />} />
+            <Route exact path="/portfolio/portfolio" element={<Portfolio />} />
+            <Route exact path="/portfolio/contact" element={<Contact />} />
+            <Route exact path="/portfolio/resume" element={<Resume />} />
+            <Route path="portfolio/*" element={<Home />} />
           </Routes>
         </main>
         <Footer />
