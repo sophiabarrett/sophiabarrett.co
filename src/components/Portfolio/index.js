@@ -39,7 +39,7 @@ function Portfolio() {
     {
       title: "Center for Business Law, UC Hastings",
       description: "Website Design & Custom WordPress Development",
-      live_url: "http://cbl.uchastings.edu/",
+      live_url: "https://cbl.uchastings.edu/",
       img_file: "uc-hastings-cbl",
     },
     {
@@ -82,6 +82,7 @@ function Portfolio() {
       title: "Daniel Armour Art",
       description: "Website Design & Custom WordPress Development",
       img_file: "daniel-armour-art",
+      live_url: "http://www.danielarmourart.com/",
     },
     {
       title: "Sustainable Design Academy, UC Davis",
