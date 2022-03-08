@@ -19,19 +19,20 @@ function Resume() {
         </p>
         <p>
           <span className="paragraph-start">Technical Skills:</span> MERN Stack,
-          JavaScript, HTML, CSS, Git, GraphQL, Mongoose, Sequelize, MySQL,
-          WordPress, Handlebars, Bootstrap, Illustrator, Photoshop, InDesign
+          JavaScript, HTML, CSS, Git, GraphQL, Apollo, Mongoose, Sequelize,
+          MySQL, WordPress, Handlebars, Bootstrap, Illustrator, Photoshop,
+          InDesign
         </p>
         <p>
           <span className="paragraph-start">Soft Skills:</span> UI/UX Design,
-          Marketing, Branding, Problem Solving, Critical Thinking, Project
-          Management, Written and Verbal Communication, Leadership, Teamwork,
+          Marketing, Branding, Customer Journeys, Problem Solving, Critical
+          Thinking, Written and Verbal Communication, Leadership, Teamwork,
           Interpersonal Skills, Emotional Intelligence, Time Management,
           Self-Management
         </p>
         <div className="download">
           <a
-            href={require("../../assets/downloads/sophia-barrett-resume.pdf")}
+            href={require("../../assets/downloads/barrett-sophia-resume.pdf")}
             className="button"
             download
           >
