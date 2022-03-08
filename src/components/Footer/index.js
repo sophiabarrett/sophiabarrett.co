@@ -15,7 +15,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="mailto:sophia@yoursummit.media" target="_blank">
+          <a href="mailto:sophia@sophiabarrett.co" target="_blank">
             <i className="fa-solid fa-at"></i>
           </a>
         </li>
