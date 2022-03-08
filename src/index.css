@@ -358,7 +358,8 @@ main section .paragraph-start {
 
 /* Resume Content Styles */
 #resume .title-wrapper h2 {
-  padding: 45px 88px 75px 33px;
+  font-size: 38px;
+  padding: 35px 75px 65px 25px;
 }
 
 #resume .content-wrapper {
