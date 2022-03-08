@@ -72,7 +72,7 @@ function Contact() {
 
       emailjs
         .sendForm(
-          "sophia@yoursummit.media",
+          "sophia@sophiabarrett.co",
           "portfolio_contact_form",
           e.target,
           "user_WZsDCzpVv3pWVCWOteguY"
@@ -92,7 +92,7 @@ function Contact() {
           },
           (error) => {
             setSubmitStatus(
-              "Sorry, something went wrong. Try again or email me directly at sophia@yoursummit.media."
+              "Sorry, something went wrong. Try again or email me directly at sophia@sophiabarrett.co."
             );
             console.error(error.text);
           }
@@ -168,8 +168,8 @@ function Contact() {
         <h4>Contact me directly at:</h4>
         <ul>
           <li>
-            <a href="mailto:sophia@yoursummit.media" target="_blank">
-              <i className="fas fa-paper-plane"></i> sophia@yoursummit.media
+            <a href="mailto:sophia@sophiabarrett.co" target="_blank">
+              <i className="fas fa-paper-plane"></i> sophia@sophiabarrett.co
             </a>
           </li>
           <li>
