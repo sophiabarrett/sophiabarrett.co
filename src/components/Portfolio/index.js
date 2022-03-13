@@ -4,28 +4,28 @@ function Portfolio() {
   const projects = [
     {
       title: "To Clarify",
-      description: "React App Design & Development",
+      description: "Full stack MERN application designed to help freelancers manage project workflow and transparency for clients",
       live_url: "https://toclarify.herokuapp.com/",
       repo_url: "https://github.com/Teeemster/ToClarify",
       img_file: "to-clarify",
     },
     {
       title: "The Book Exchange",
-      description: "Web App Design & Development",
+      description: "Online platform for book lovers to connect, discover new reads, and trade books",
       live_url: "https://the-book-exchange.herokuapp.com/",
       repo_url: "https://github.com/sophiabarrett/the-book-exchange/",
       img_file: "the-book-exchange",
     },
     {
       title: "Technically a Blog",
-      description: "Web App Design & Development",
+      description: "CMS-style blog site where users publish blog posts and comment on each other's posts",
       live_url: "https://technically-a-blog.herokuapp.com/",
       repo_url: "https://github.com/sophiabarrett/technically-a-blog",
       img_file: "technically-a-blog",
     },
     {
       title: "Show Finder",
-      description: "Web App Development",
+      description: "Web application that finds concerts near you for artists similar to those you love",
       live_url: "https://sophiabarrett.github.io/show-finder/",
       repo_url: "https://github.com/sophiabarrett/show-finder",
       img_file: "show-finder",
