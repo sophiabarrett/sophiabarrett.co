@@ -10,9 +10,9 @@ function Resume() {
             Self-motivated full stack web developer
           </span>{" "}
           with background in design, marketing, and visual communication. Over a
-          decade of experience in UI/UX design and WordPress development.
+          decade of experience in UI/UX design and frontend development.
           Fascinated by the intersection of form and function and passionate
-          about uniting intuitive front end experiences with powerful back end
+          about uniting intuitive frontend experiences with powerful backend
           performance. Positioned to provide unique perspectives on end-user
           experience by leveraging expertise in digital marketing and user
           experience design.
@@ -20,8 +20,8 @@ function Resume() {
         <p>
           <span className="paragraph-start">Technical Skills:</span> MERN Stack,
           JavaScript, HTML, CSS, Git, GraphQL, Apollo, Mongoose, Sequelize,
-          MySQL, WordPress, Handlebars, Bootstrap, Illustrator, Photoshop,
-          InDesign
+          NoSQL, MySQL, WordPress, Handlebars, Bootstrap, Illustrator,
+          Photoshop, InDesign
         </p>
         <p>
           <span className="paragraph-start">Soft Skills:</span> UI/UX Design,
@@ -32,7 +32,7 @@ function Resume() {
         </p>
         <div className="download">
           <a
-            href={require("../../assets/downloads/barrett-sophia-resume.pdf")}
+            href={require("../../assets/downloads/Barrett_Sophia_RESUME.pdf")}
             className="button"
             download
           >
