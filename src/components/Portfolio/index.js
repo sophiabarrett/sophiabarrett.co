@@ -5,8 +5,8 @@ function Portfolio() {
     {
       title: "To Clarify",
       description: "Full stack MERN application designed to help freelancers manage project workflow and transparency for clients",
-      live_url: "https://toclarify.herokuapp.com/",
-      repo_url: "https://github.com/Teeemster/ToClarify",
+      live_url: "https://toclarifyapp.herokuapp.com/",
+      repo_url: "https://github.com/sophiabarrett/toclarifyapp",
       img_file: "to-clarify",
     },
     {
